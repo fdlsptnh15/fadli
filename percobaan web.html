@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- UBAH: judul dan deskripsi yang muncul di Google -->
+<title>FADLI SEPTIANAH  – Desainer Web</title>
+<meta name="description" content="Halo, saya FADLI SEPTIANAH, desainer web dari Tangerang. Kenalan, lihat karya saya, dan hubungi saya .">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#f5f5f2;--ink:#14161c;--mute:#5b6070;--card:#fff;--line:#deded8;
+ --blue:#2b4bff;--on-blue:#fff;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1117;--ink:#eef0f6;--mute:#a0a6b8;--card:#181b25;--line:#2a2f3e;--blue:#3a57ff}}
+:root[data-theme="dark"]{--bg:#0f1117;--ink:#eef0f6;--mute:#a0a6b8;--card:#181b25;--line:#2a2f3e;--blue:#3a57ff}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:1.05rem}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #ffb400;outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--blue);color:var(--on-blue);border-radius:0 0 36px 36px;padding:28px 0 56px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:56px}
+.top b{font-weight:800;font-size:1.1rem}
+.top nav{display:flex;gap:18px;font-size:.95rem}
+.top nav a{text-decoration:none;opacity:.9}
+.top nav a:hover{text-decoration:underline}
+.avatar{width:84px;height:84px;border-radius:50%;background:#fff;color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:2rem;margin-bottom:22px}
+/* Untuk foto asli: ganti isi .avatar dengan <img src="fotomu.jpg" alt="Foto Budi"> */
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.hero h1{font-size:clamp(2.8rem,13vw,5.6rem);line-height:.95;margin:0 0 18px;font-weight:800;letter-spacing:-.045em}
+.hero p{margin:0 0 28px;max-width:34ch;font-size:1.2rem;opacity:.95}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:600;border:2px solid #fff}
+.btn.fill{background:#fff;color:var(--blue)}
+
+/* ---------- BAGIAN ---------- */
+section{padding:56px 0 0}
+h2{font-size:1.9rem;letter-spacing:-.03em;margin:0 0 14px;font-weight:800}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
+.items{display:grid;gap:14px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.item h3{margin:0 0 2px;font-size:1.2rem}
+.item small{color:var(--mute)}
+.item p{margin:8px 0 0;color:var(--mute)}
+.contact a.row{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.contact a.row span:last-child{color:var(--mute)}
+.contact a.row:hover span:first-child{text-decoration:underline}
+footer{padding:48px 0 40px;color:var(--mute);font-size:.9rem}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="top">
+   <b>Budi S.</b>
+   <nav>
+    <a href="#tentang">IG:fdlisptnh</a>
+    <a href="#karya">-</a>
+    <a href="#kontak">085819369979</a>
+   </nav>
+  </div>
+
+  <!-- UBAH: FADLI SEPTIANAH (atau ganti dengan foto) -->
+  <div class="avatar" aria-hidden="true">F</div>
+
+  <!-- UBAH: nama lengkap dan kalimat perkenalan singkat -->
+  <h1>FADLI SEPTIANAH</h1>
+  <p>Desainer web dari TANGERANG . Saya membuat situs tidak begitu bagus , cepat, dan mudah dipakai.</p>
+
+  <div class="btns">
+   <a class="btn fill" href="#kontak">085819369979</a>
+   <a class="btn" href="#karya">Lihat karya</a>
+  </div>
+ </div>
+</header>
+
+<main class="wrap">
+
+ <section id="tentang">
+  <h2>Tentang saya</h2>
+  <!-- UBAH: ceritakan diri Anda dengan 2 sampai 4 kalimat -->
+  <p>Halo, NAMA SAYA FADLI . saya belum terlalu berpengalaman tentang membuat website yang responsif dan user-friendly,saya masih sekolah dan masih belajar, dan saya hobi badminton dan foto-foto dan teraveling .</p>
+ </section>
+
+ <section id="keahlian">
+  <h2>Keahlian</h2>
+  <!-- UBAH:  tambah atau hapus <li> sesuai keahlian Anda -->
+  <ul class="tags">
+   <li>HTML &amp; CSS</li>
+   <li>JavaScript</li>
+   <li>Desain UI</li>
+   <li>Figma</li>
+   <li>Fotografi</li>
+   <li>Penulisan</li>
+  </ul>
+ </section>
+
+ <section id="karya">
+  <h2>Karya &amp; pengalaman</h2>
+  <div class="items">
+   <!-- UBAH: salin blok .item untuk menambah karya -->
+   <article class="item">
+    <h3>Situs Kedai Kopi Lokal</h3>
+    <small>2025 · Desain dan pengembangan</small>
+    <p>Menu digital dan halaman pesan antar yang meningkatkan pesanan lewat WhatsApp.</p>
+   </article>
+   <article class="item">
+    <h3>Portal Komunitas Sepeda</h3>
+    <small>2024 · Pengembang web</small>
+    <p>Kalender rute mingguan dan galeri foto untuk lebih dari 300 anggota.</p>
+   </article>
+   <article class="item">
+    <h3>Magang Desainer UI</h3>
+    <small>2023 · Studio Kreatif Bandung</small>
+    <p>Merancang tampilan aplikasi dan membantu riset pengguna.</p>
+   </article>
+  </div>
+ </section>
+
+ <section id="kontak" class="contact">
+  <h2>Mari ngobrol</h2>
+  <p>Punya proyek atau sekadar ingin kenalan? Silakan hubungi saya lewat salah satu jalur ini.</p>
+  <!-- UBAH: ganti tautan dengan akun Anda -->
+  <a class="row" href="mailto:fadliseptianah@gmail.com"><span>Email</span><span>fadliseptianah@gmail.com</span></a>
+  <a class="row" href="https://instagram.com/fadliseptianah" target="_blank" rel="noopener"><span>Instagram</span><span>fdllisptnh</span></a>
+  <a class="row" href="https://linkedin.com/in/fadliseptianah" target="_blank" rel="noopener"><span>Threads</span><span>fdlisptnh</span></a>
+  <a class="row" href="https://github.com/fadliseptianah" target="_blank" rel="noopener"><span>GitHub</span><span>fadliseptianah</span></a>
+ </section>
+
+</main>
+
+<footer class="wrap">© <span id="y">2026</span> FADLI SEPTIANAH. Dibuat dengan HTML dan CSS biasa.</footer>
+
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
